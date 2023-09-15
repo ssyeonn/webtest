@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple. Snake</title>
+  <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+  <div style="width: 1000px;">
+    <h1 class="title">Simple, Snake</h1>
+    <div class="tab">
+      <button class="tablinks" onclick = "location.href = '/'">Play</button>
+      <button class="tablinks" onclick = "location.href = '/score_board'">Score_Board</button>
+    </div>
+    <div id="Score_Board" class="tabcontent">
+        <br><h3 style="text-align: center; font-size: 30px;">Score_Board</h3><br>
+        <table>
+          <th>순위</th>
+          <th>이름</th>
+          <th>점수</th>
+          <th>생존시간</th>
+          <th>등록일자</th>
+          <tr>
+            <td>1위</td>
+            <td>{{name[0]}}</td>
+            <td>{{score[0]}}</td>
+            <td>{{surv_time[0]}}</td>
+            <td>{{inst_time[0]}}</td>
+          </tr>
+          <tr>
+            <td>2위</td>
+            <td>{{name[1]}}</td>
+            <td>{{score[1]}}</td>
+            <td>{{surv_time[1]}}</td>
+            <td>{{inst_time[1]}}</td>
+          </tr>
+          <tr>
+            <td>3위</td>
+            <td>{{name[2]}}</td>
+            <td>{{score[2]}}</td>
+            <td>{{surv_time[2]}}</td>
+            <td>{{inst_time[2]}}</td>
+          </tr>
+          <tr>
+            <td>4위</td>
+            <td>{{name[3]}}</td>
+            <td>{{score[3]}}</td>
+            <td>{{surv_time[3]}}</td>
+            <td>{{inst_time[3]}}</td>
+          </tr>
+          <tr>
+            <td>5위</td>
+            <td>{{name[4]}}</td>
+            <td>{{score[4]}}</td>
+            <td>{{surv_time[4]}}</td>
+            <td>{{inst_time[4]}}</td>
+          </tr>
+          <tr>
+            <td>6위</td>
+            <td>{{name[5]}}</td>
+            <td>{{score[5]}}</td>
+            <td>{{surv_time[5]}}</td>
+            <td>{{inst_time[5]}}</td>
+          </tr>
+          <tr>
+            <td>7위</td>
+            <td>{{name[6]}}</td>
+            <td>{{score[6]}}</td>
+            <td>{{surv_time[6]}}</td>
+            <td>{{inst_time[6]}}</td>
+          </tr>
+          <tr>
+            <td>8위</td>
+            <td>{{name[7]}}</td>
+            <td>{{score[7]}}</td>
+            <td>{{surv_time[7]}}</td>
+            <td>{{inst_time[7]}}</td>
+          </tr>
+          <tr>
+            <td>9위</td>
+            <td>{{name[8]}}</td>
+            <td>{{score[8]}}</td>
+            <td>{{surv_time[8]}}</td>
+            <td>{{inst_time[8]}}</td>
+          </tr>
+          <tr>
+            <td>10위</td>
+            <td>{{name[9]}}</td>
+            <td>{{score[9]}}</td>
+            <td>{{surv_time[9]}}</td>
+            <td>{{inst_time[9]}}</td>
+          </tr>
+        </table>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='js/script.js') }}" > </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple. Snake</title>
+  <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+  <div style="width: 1000px;">
+    <h1 class="title">Simple, Snake</h1>
+    <div class="tab">
+      <button class="tablinks" onclick = "location.href = '/'">Play</button>
+      <button class="tablinks" onclick = "location.href = '/score_board'">Score_Board</button>
+    </div>
+    <div id="Play" class="tabcontent">
+      <div class="game-container">
+        <p class="score">점수: <span id="score">0</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     생존시간: <span id="stopwatch">00:00:00</span></p>
+        <div class="buttons">
+          <button id="start-btn">▶</button>
+        </div>
+        <br>
+        <canvas id="game-board" width="800" height="400"></canvas>
+      </div>
+    </div>
+  </div>
+</form>
+  <script src="{{ url_for('static', filename='js/script.js') }}" > </script>
+</body>
+</html>

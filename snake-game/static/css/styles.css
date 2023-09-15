@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  width: 100%;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  display: inline-block;
+}
+
+.game-container {
+  background-color: #999999;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family : Cursive;
+  margin-bottom: 1rem;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #000;
+  background-color: #000;
+}
+
+.buttons {
+  margin-top: 1rem;
+}
+
+.buttons button {
+  background-color: #6a4caf;
+  border: none;
+  color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius : 50%
+}
+
+.buttons button:hover {
+  background-color: #8f238f;
+}
+
+.score {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+table {
+  border: 1px #a39485 solid;
+  font-size: .9em;
+  box-shadow: 0 2px 5px rgba(0,0,0,.25);
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+th {
+  text-align: center;
+}
+  
+thead {
+  font-weight: bold;
+  color: #fff;
+  background: #73685d;
+}
+  
+ td, th {
+  padding: 1em .5em;
+  vertical-align: middle;
+}
+  
+ td {
+  text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  background: #fff;
+}
+
+a {
+  color: #73685d;
+}
